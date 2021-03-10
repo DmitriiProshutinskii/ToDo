@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Tasks
 //
-//  Created by Физтех.Радио on 09.03.2021.
+//  Created by Dmitrii Proshutinskii on 09.03.2021.
 //
 
 import UIKit
