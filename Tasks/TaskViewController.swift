@@ -10,6 +10,7 @@ import UIKit
 class TaskViewController: UIViewController {
     
     @IBOutlet var label: UILabel!
+    @IBOutlet var text_: UITextField!
     
     var update: (() -> Void)?
     
@@ -19,8 +20,9 @@ class TaskViewController: UIViewController {
         super.viewDidLoad()
 
         if let id = taskId {
-            if let tasks = UserDefaults().value(forKey: "tasks") as? [String]{
-                label.text = tasks[id]
+            if let tasks = UserDefaults().value(forKey: "tasks") as? [Task]{
+                label.text = tasks[id].label
+                text_.text = tasks[id].text
             }
         }
 

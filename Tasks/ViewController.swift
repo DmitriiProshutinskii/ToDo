@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     //Таблица, в которую пишем. Прикрепляем её через storyboard
     @IBOutlet var tableView : UITableView!
     //Список задач. В последствии заменить на класс
-    var tasks = [String]()
+    var tasks = [Task]()
     
     //Функция, вызывающаяся при нажатии кнопки Add. Прикрепляем её через storyboard
     @IBAction func didTapAdd() {
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         //MARK - Fix It
         tasks.removeAll()
         
-        if let tasks_ = UserDefaults().value(forKey: "tasks") as? [String] {
+        if let tasks_ = UserDefaults().value(forKey: "tasks") as? [Task] {
             tasks = tasks_
         }
         else {
@@ -93,7 +93,7 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = tasks[indexPath.row]
+        cell.textLabel?.text = tasks[indexPath.row].label
         return cell
     }
 }

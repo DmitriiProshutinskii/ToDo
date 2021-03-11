@@ -15,6 +15,7 @@
 		AF4B19EA25F7C6C4005E9FC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4B19E825F7C6C4005E9FC1 /* LaunchScreen.storyboard */; };
 		AF4B19F325F7D6E2005E9FC1 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4B19F225F7D6E2005E9FC1 /* EntryViewController.swift */; };
 		AF4B19F625F7D6F3005E9FC1 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4B19F525F7D6F3005E9FC1 /* TaskViewController.swift */; };
+		AFF7AB5825FA72F300F8D995 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7AB5725FA72F300F8D995 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AF4B19EB25F7C6C4005E9FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF4B19F225F7D6E2005E9FC1 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		AF4B19F525F7D6F3005E9FC1 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		AFF7AB5725FA72F300F8D995 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				AF4B19DF25F7C6C3005E9FC1 /* SceneDelegate.swift */,
 				AF4B19E325F7C6C3005E9FC1 /* Main.storyboard */,
 				AF4B19E125F7C6C3005E9FC1 /* ViewController.swift */,
+				AFF7AB5725FA72F300F8D995 /* Task.swift */,
 				AF4B19F225F7D6E2005E9FC1 /* EntryViewController.swift */,
 				AF4B19F525F7D6F3005E9FC1 /* TaskViewController.swift */,
 				AF4B19E625F7C6C4005E9FC1 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				AF4B19F325F7D6E2005E9FC1 /* EntryViewController.swift in Sources */,
 				AF4B19F625F7D6F3005E9FC1 /* TaskViewController.swift in Sources */,
 				AF4B19DE25F7C6C3005E9FC1 /* AppDelegate.swift in Sources */,
+				AFF7AB5825FA72F300F8D995 /* Task.swift in Sources */,
 				AF4B19E025F7C6C3005E9FC1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

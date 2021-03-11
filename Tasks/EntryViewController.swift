@@ -10,6 +10,7 @@ import UIKit
 class EntryViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var field: UITextField!
+    @IBOutlet var text_: UITextField!
     
     var update: (() -> Void)?
     
@@ -33,13 +34,14 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         guard let text = field.text, !text.isEmpty else {
             return
         }
-        guard var tasks_ = UserDefaults().value(forKey: "tasks") as? [String] else { return }
+        guard var tasks_ = UserDefaults().value(forKey: "tasks") as? [Task] else { return }
         
-        tasks_.append(text)
+        
+        tasks_.append(Task(label: field.text ?? "Label", text: text_.text ?? "Text here" ))
         UserDefaults().set(tasks_, forKey: "tasks")
         
         update?()
-        
+        print("We are here")
         navigationController?.popViewController(animated: true)
     }
 
